@@ -1,0 +1,27 @@
+.nav
+  display: flex
+  flex-direction: column
+  width: 100%
+
+  &__arrows
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+
+  &-arrow
+    width: 100%
+    padding: 10px 0
+    border-bottom: 1px solid $border-color
+    border-right: 1px solid $border-color
+
+  &__head
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    padding: 20px
+    border-bottom: 1px solid $border-color
+    border-right: 1px solid $border-color
+
+    @media #{$mobile}
+      .btn
+        display: none
